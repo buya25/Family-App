@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_bg"
+    android:orientation="vertical"
+    tools:context=".Activity.SplashActivity">
+
+    <!--  logo  -->
+    <ImageView
+        android:id="@+id/id_materialuiux_ImageView"
+        android:layout_width="346dp"
+        android:layout_height="417dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="For more ui/ux visit www.materialuiux.com"
+        android:src="@drawable/logoliz" />
+
+    <!--  progress  -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_materialuiux_ImageView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:max="100" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="@string/designed"
+        android:textColor="#959595"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

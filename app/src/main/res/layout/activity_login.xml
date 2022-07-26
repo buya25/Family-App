@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    tools:context=".Activity.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/family_logo"
+            android:scaleType="fitCenter"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:hint="Email"
+            android:layout_marginTop="15dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:id="@+id/email_log"
+            android:padding="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:hint="Password"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:id="@+id/password_log"
+            android:padding="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/btn_Login_log"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Register"
+            android:textAlignment="center"
+            android:id="@+id/txt_login_log"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
